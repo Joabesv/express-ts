@@ -3,7 +3,7 @@ import 'dotenv/config';
 import logger from './utils/logger';
 import server from './server';
 import baseRoutes from './routes/base';
-import routeExists from './helpers/routeExists';
+import routeExists from './middlewares/routeExists';
 
 const { PORT } = process.env;
 

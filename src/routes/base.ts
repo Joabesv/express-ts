@@ -3,7 +3,7 @@ import { Request, Response, Router } from 'express';
 const router = Router();
 
 router.get('/', (req: Request, res: Response) => {
-  res.json({ msg: 'Server Started' });
+  res.status(200).json({ msg: 'Server Started' });
 });
 
 export default router;
